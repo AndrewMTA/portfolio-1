@@ -69,29 +69,50 @@ export const FloatingNav = ({
         }}
       >
         <div className="flex items-center space-x-4">
-             <img
+              <Link href="/">  <img
             src="https://res.cloudinary.com/dojwag3u1/image/upload/v1718564761/Frame_151_jrsqra.png"
             alt="Logo"
             className=" lg:max-w-[50px] lg:max-h-[50px] md:max-w-[45px] md:max-h-[40px] sm:max-w-[40px] sm:max-h-[40px] max-w-[40px] max-h-[40px]"
          
-          />
+          /> </Link>
          
         </div>
         <div className="icon-social">
         <div className="flex space-x-4">
           {navItems.map((navItem, idx) => (
-            <div
+             <Link href={`${navItem.link}`}> 
+        <div
+           
               key={`link-${idx}`}
             
               className={cn(
                 "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 !cursor-pointer"
               )}
             >
+          
               <span className="block sm:hidden">{navItem.icon}</span>
-              <span className="text-sm">{navItem.name}</span>
-            </div>
+              <span className="text-sm">{navItem.name}</span> 
+            </div></Link>
           ))}
-        </div></div>
+
+
+           <a href="mailto:info@nighthawk.ag">
+         <div
+           
+          
+            
+              className={cn(
+                "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 !cursor-pointer"
+              )}
+            >
+          
+             
+              <span className="text-sm">Contact</span> 
+            </div></a>
+        </div>
+        </div>
+        
+             
 
         <div  className="burger"><img style={{width: '30px', height: '30px'}} src="https://res.cloudinary.com/dojwag3u1/image/upload/v1718582369/menu_2_aznhfi.png"/> </div>
       </motion.div>

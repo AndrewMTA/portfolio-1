@@ -1,17 +1,17 @@
 import React from "react";
 
-import { workExperience } from "@/data";
+import { mission } from "@/data";
 import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
   return (
-    <div className="py-20 mt-10 w-full">
-      <h1  style={{marginTop:'35px'}}className="heading">
-        Our <span className="text-purple">Team </span>
+    <div className="py-20 w-full">
+      <h1 style={{marginTop: '65px'}}className="heading">
+        Our <span className="text-purple"> Mission</span>
       </h1>
 
-      <div className="w-full mt-8 flex flex-col gap-10 p-1.25">
-        {workExperience.map((card) => (
+      <div className="w-full mt-11 grid lg:grid-cols-4 grid-cols-1 gap-10">
+        {mission.map((card) => (
           <Button
             key={card.id}
             //   random duration will be fun , I think , may be not
@@ -39,7 +39,7 @@ const Experience = () => {
                 <h1 className="text-start text-xl md:text-2xl font-bold">
                   {card.title}
                 </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
+                <p className="text-start text-white-100 text-16px mt-3 font-semibold whitespace-pre-line">
                   {card.desc}
                 </p>
               </div>
