@@ -4,10 +4,8 @@ import { navItems } from "@/data";
 
  
 import Footer from "@/components/Footer";
-import Team from "@/components/Team";
- 
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import Approach from "@/components/Approach";
+import Mission from "@/components/Mission";
 
 const Page = () => {
   return (
@@ -16,7 +14,7 @@ const Page = () => {
         <FloatingNav navItems={navItems} />
         
      
-        <Approach />
+        <Mission />
     
         <Footer />
       </div>

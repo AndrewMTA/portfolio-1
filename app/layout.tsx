@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "NightHawk",
-  description: "Robotics for farming",
+  description: "Nighthawk is dedicated to transforming the agriculture industry by digitizing the farm using AI and providing end-to-end digital visibility across the agricultural supply chain.",
 };
 
 export default function RootLayout({

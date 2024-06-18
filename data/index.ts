@@ -5,7 +5,7 @@ export const navItems = [
 ];
 
  
-export const workExperience = [
+export const team = [
   {
     id: 1,
     title: "Lawrence Ibarria | CEO",
@@ -42,6 +42,7 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
+    link:"https://www.linkedin.com/company/nighthawk-ag/"
   },
 ];
 
