@@ -80,7 +80,8 @@ export const FloatingNav = ({
         <div className="icon-social">
         <div className="flex space-x-4">
           {navItems.map((navItem, idx) => (
-             <Link href={`${navItem.link}`}> 
+             <Link href={`${navItem.link}`}
+             key={`link-${idx}`}> 
         <div
            
               key={`link-${idx}`}
