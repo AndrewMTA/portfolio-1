@@ -1,6 +1,6 @@
 import React from "react";
 
-import { workExperience } from "@/data";
+import { team } from "@/data";
 import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
@@ -11,7 +11,7 @@ const Experience = () => {
       </h1>
 
       <div className="w-full mt-8 flex flex-col gap-10 p-1.25">
-        {workExperience.map((card) => (
+        {team.map((card) => (
           <Button
             key={card.id}
             //   random duration will be fun , I think , may be not

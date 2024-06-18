@@ -3,7 +3,7 @@ import React from "react";
 import { mission } from "@/data";
 import { Button } from "./ui/MovingBorders";
 
-const Experience = () => {
+const Mission = () => {
   return (
     <div className="py-20 w-full">
       <h1 style={{marginTop: '65px'}}className="heading">
@@ -51,4 +51,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Mission;
