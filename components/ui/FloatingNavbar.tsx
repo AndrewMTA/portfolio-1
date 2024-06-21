@@ -44,17 +44,12 @@ const [close, setClose] = useState(true)
   });
 
  return (
-    <AnimatePresence mode="wait">
-      <motion.div
-     
-        className={cn(
-          "flex max-w-fit md:max-h-[80px] sm: max-h-[80px] md:min-w-[55vw] lg:min-w-[500px] sm: min-w-[250px] fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-between space-x-8",
-          className
-        )}
+    <>
+ <div
         style={{
           backdropFilter: "blur(16px) saturate(180%)",
           backgroundColor: "rgba(17, 25, 40, 0.75)",
-          borderRadius: "12px",
+          borderRadius: "52px",
           border: "1px solid rgba(255, 255, 255, 0.125)",
           position: 'absolute',
         }}
@@ -126,7 +121,7 @@ const [close, setClose] = useState(true)
         ))}
       </div></>}
    
-      </motion.div>
-    </AnimatePresence>
+      </div>
+    </>
   );
 };
